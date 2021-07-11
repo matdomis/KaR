@@ -143,7 +143,8 @@ int getword (char *word, int lim) {
 	}
 
 	/* Read a word. */
-	for (*w++ = c; --lim > 1; w++)
+	*w++ = c;
+	for ( ; --lim > 1; w++)
 		if (!isalnum(*w = getch()) && *w != '_') {
 			ungetch(*w);
 			break;
