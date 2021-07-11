@@ -11,8 +11,12 @@ struct key {
 	int count;
 };
 
+struct key keytabs[] = {{"char", 0}, {"double", 0}, 
+							{"float", 0}, {"int", 0}, 
+							{"long", 0}, {"short", 0}};
+							
 #define MAXWORD 100
-#define NKEYS 6
+#define NKEYS (sizeof keytab / sizeof(struct key))
 
 int getword(char *, int);
 int binsearch(char *, struct key [], int);
@@ -20,10 +24,6 @@ int binsearch(char *, struct key [], int);
 /* Note: the strcmp function compares the first letters individually, this is important to
          binsearch works */
 int main() {
-	struct key keytabs[] = {{"char", 0}, {"double", 0}, 
-							{"float", 0}, {"int", 0}, 
-							{"long", 0}, {"short", 0}};
-	
 	int n;
 	char word[MAXWORD];
 
