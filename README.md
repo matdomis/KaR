@@ -1,0 +1,1 @@
+Some problems solved from the book [The C Programming Language](https://www.google.com/search?q=the+c+programming+langue&oq=the+c+programming+langue&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEIMjUyNGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8).
